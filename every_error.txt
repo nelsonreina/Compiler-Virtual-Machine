@@ -1,0 +1,108 @@
+var x, y;
+begin
+x := y + 56;
+end 
+
+Error #9: Period expected.
+_________________________________________________________
+var x, y;
+begin
+x e y + 56;
+end.
+
+Error #13: Assignment operator expected.
+_________________________________________________________
+var x, y;
+begin
+x = y + 56
+end.
+
+Error #17 : Semicolon expected
+_________________________________________________________
+var x y;
+begin
+x = y + 56;
+end.
+
+Error #5: Semicolon or comma missing.
+_________________________________________________________
+var y;
+begin
+x = y + 56;
+end.
+
+Error #11: Undeclared identifier.
+_________________________________________________________
+
+var x, y;
+    begin
+x = (y + 56;
+end.
+
+Error #22: Right parenthesis missing.
+_________________________________________________________
+var x, y;
+    begin
+x = y + 56);
+end.
+
+Error #8: Incorrect symbol after statement part in block.
+
+_________________________________________________________
+
+begin
+x:= 4;
+read w;
+if w > x
+	w:= w + 1;
+write w
+end.
+
+Error #16: then expected.
+
+_________________________________________________________
+
+var x, y;
+    begin
+x := (y + 56);
+end.
+
+Error #1: Use = instead of :=.
+
+_________________________________________________________
+
+begin
+x:= 4;
+read w;
+if w := x
+	w:= w + 1;
+write w
+end.
+
+Error #20: Relational operator expected.
+
+_________________________________________________________
+
+begin
+end.
+
+Error #7: Statement expected.
+
+_________________________________________________________
+
+var;
+const n;
+    begin
+x:= n +2;
+end.
+
+Error #4: 'const', 'var', 'procedure' must be followed by identifier.
+_________________________________________________________
+
+var x;
+const n;
+    begin
+n:= x +2;
+end.
+
+Error #12: Assignment to constant or procedure is not allowed.

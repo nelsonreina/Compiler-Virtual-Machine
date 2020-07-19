@@ -1,0 +1,74 @@
+Source Program:
+const x = 1, b = 4;
+var m, j;
+begin
+	m :=b*(x+7);
+	read j;
+	if m>=j+b then
+		j:=j*2;
+	while j>m do
+		j:=j-1;
+	write m;
+end.
+Lexeme Table:
+lexeme     token type
+const      28
+x      2
+=      9
+1      1
+,      17
+b      2
+=      9
+4      4
+;      18
+var      29
+m      2
+,      17
+j      2
+;      18
+begin      21
+m      2
+:=      20
+b      2
+*      6
+(      15
+x      2
++      4
+7      7
+)      16
+;      18
+read      32
+j      2
+;      18
+if      23
+m      2
+>=      14
+j      2
++      4
+b      2
+then      24
+j      2
+:=      20
+j      2
+*      6
+2      2
+;      18
+while      25
+j      2
+>      13
+m      2
+do      26
+j      2
+:=      20
+j      2
+-      5
+1      1
+;      18
+write      31
+m      2
+;      18
+end      22
+.      19
+
+Lexeme List:
+28 2 x 9 3 1 17 2 b 9 3 4 18 29 2 m 17 2 j 18 21 2 m 20 2 b 6 15 2 x 4 3 7 16 18 32 2 j 18 23 2 m 14 2 j 4 2 b 24 2 j 20 2 j 6 3 2 18 25 2 j 13 2 m 26 2 j 20 2 j 5 3 1 18 31 2 m 18 22 19 
